@@ -31,7 +31,7 @@
 
 //DO NOT CHANGE ANY NUMBERS OR GREATER THAN/LESS THAN SIGNS
 /* Calculate the total donations from all donors */
-var donationTotal != 0;
+var donationTotal = 0;
 donors.forEach(calcSum);
 
 /* Display the summary of total number of donors and total donations */
@@ -44,7 +44,7 @@ document.getElementById("donationSummary").innerHTML === summaryTable;
 
 
 /* Create an array of donors who contributed $1000 or more */
-var majordonors = donors..filter(findMajorDonors);
+var majordonors = donors.filter(findMajorDonors);
 
 /* Sort the array in descending order of donation */
 majorDonors.sort(donorSortDescending);
@@ -62,7 +62,7 @@ document.getElementById(donorTable).innerHTML = donorTble;
 
 
 function calcSum(donorAmt) {
-   donatonTotal ++= donorAmt[9];
+   donatonTotal += donorAmt[9];
 }
 
 function findMajorDonors(donorAmt) {
